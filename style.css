@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: scroll;
+}
+#item {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 5px grey;
+  display: block;
+}
+#to-do-box {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#to-do-box li {
+    position: relative;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    margin-top: 10px;
+    user-select: none;
+}
+#to-do-box li i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.done{
+  text-decoration: line-through;
+  color: black;
+  background-color: #2a5e9a !important ;
+}
+h1,p{
+  text-align: center;
+}
+h1{
+  font-size: 3rem;
+}
+p{
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+p a{
+  text-decoration: none;
+  color: red;
+}
+p a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(204, 201, 199);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: red;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+footer .home{
+  color: black;
+}
+footer #myName{
+  color: rgba(78, 51, 25, 0.829);
+}
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .box {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  h1 {
+    font-size: 2rem; /* Decrease the font size of h1 */
+  }
+  p {
+    font-size: 1.2rem; /* Decrease the font size of p */
+  }
+  footer {
+    position: relative; /* Reset footer position for smaller screens */
+    margin-top: 20px; /* Add space above footer */
+    background-color: rgb(204, 201, 199);
+  }
+  footer a {
+    text-decoration: none;
+    color: red;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  footer .home{
+    color: black;
+  }
+  .footer-container {
+    flex-direction: column; /* Arrange footer sections in a column */
+  }
+  .footer-section {
+    margin: 5px 0; /* Adjust margin for footer sections */
+  }
+}

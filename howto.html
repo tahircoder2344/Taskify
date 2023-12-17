@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual</title>
+    <style>
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+       
+    /* Styling for the User Manual */
+    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(204, 201, 199);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: red;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+footer .home{
+  color: black;
+}
+footer #myName{
+  color: rgba(78, 51, 25, 0.829);
+}
+@media screen and (max-width: 768px) {
+  .box {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  h1 {
+    font-size: 2rem; /* Decrease the font size of h1 */
+  }
+  p {
+    font-size: 1.2rem; /* Decrease the font size of p */
+  }
+  footer {
+    position: relative; /* Reset footer position for smaller screens */
+    margin-top: 20px; /* Add space above footer */
+    background-color: rgb(204, 201, 199);
+  }
+  footer a {
+    text-decoration: none;
+    color: red;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  footer .home{
+    color: black;
+  }
+  .footer-container {
+    flex-direction: column; /* Arrange footer sections in a column */
+  }
+  .footer-section {
+    margin: 5px 0; /* Adjust margin for footer sections */
+  }
+}
+
+  </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Manual - Taskify</h1>
+    
+        <h2>Adding To-Do Items:</h2>
+        <p>To add a new to-do item, simply type the task in the input field and press "Enter".</p>
+    
+        <h2>Marking Tasks as Done:</h2>
+        <p>To mark a task as complete, click on the task itself. This action will  add a  linethrough in the task, indicating it's done.</p>
+    
+        <h2>Removing Tasks:</h2>
+        <p>To remove a task, click on the 'x' icon beside the task. This action will instantly remove the task from your list.</p>
+    
+        <h2>Stay Organized:</h2>
+        <p>Keep your tasks organized by utilizing these features to manage your to-do list efficiently.</p>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <a href="index.html" class="home">Home</a>
+            <br>
+            <a rel = 'noopener'href="https://github.com/tahircoder2344" class="home" target="_blank">GitHub Profile</a>
+          </div>
+          <div class="footer-section">
+            <p>Phone: <a href="tel:+">+92 337 8619 867</a></p>
+            <p>Email: <a href="mailto:">hmtahirhassan@example.com</a></p>
+          </div>
+          <div class="footer-section">
+            <p>&copy; 2023</p>
+            <p id="myName">Developed by: Hafiz Muhammad Tahir</p>
+            <a href="https://tahircoder2344.github.io/Resume/index.html " id="home"target = 'blank'>Know Me </a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
